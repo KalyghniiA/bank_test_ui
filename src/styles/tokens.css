@@ -1,0 +1,83 @@
+/*
+ * Дизайн-токены «Банка». Источник — Figma, коллекции «Цвета» и «Размеры», текстовые стили.
+ * Имена повторяют Figma: bg/page → --color-bg-page, space/4 → --space-4.
+ */
+:root {
+  /* Фон */
+  --color-bg-page: #f6f7f8;
+  --color-bg-surface: #ffffff;
+  --color-bg-subtle: #f0f1f3;
+  --color-bg-subtle-hover: #e6e8eb;
+  --color-bg-overlay: rgb(28 28 30 / 50%);
+
+  /* Акцент */
+  --color-accent-primary: #ffdd2d;
+  --color-accent-primary-hover: #fcc521;
+  --color-accent-primary-disabled: #fff1a8;
+
+  /* Текст */
+  --color-text-primary: #1c1c1e;
+  --color-text-secondary: #6b6f78;
+  --color-text-tertiary: #9299a2;
+  --color-text-on-accent: #1c1c1e;
+  --color-text-inverse: #ffffff;
+  --color-text-link: #2d6ae3;
+
+  /* Границы */
+  --color-border-default: #e1e3e7;
+  --color-border-strong: #b9bec6;
+  --color-border-focus: #2d6ae3;
+
+  /* Статусы */
+  --color-status-danger: #c62828;
+  --color-status-danger-bg: #fdecec;
+  --color-status-success: #1b7f46;
+  --color-status-success-bg: #e7f5ec;
+  --color-status-warning: #a85400;
+  --color-status-warning-bg: #fff3e0;
+  --color-status-info: #2d6ae3;
+  --color-status-info-bg: #ebf1fd;
+
+  /* Типы счетов */
+  --color-account-default: #5b6b82;
+  --color-account-saving: #22a35a;
+  --color-account-checking: #7a5af0;
+
+  /* Отступы: шаг 4 px */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Скругления */
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
+
+  /* Шрифт и текстовые стили (shorthand для свойства font) */
+  --font-family: 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-display: 700 36px/44px var(--font-family);
+  --text-h1: 700 28px/36px var(--font-family);
+  --text-h2: 600 22px/28px var(--font-family);
+  --text-h3: 600 17px/24px var(--font-family);
+  --text-body: 400 15px/22px var(--font-family);
+  --text-body-medium: 500 15px/22px var(--font-family);
+  --text-body-semibold: 600 15px/22px var(--font-family);
+  --text-caption: 400 13px/18px var(--font-family);
+  --text-caption-medium: 500 13px/18px var(--font-family);
+  --text-amount-l: 600 24px/32px var(--font-family);
+  --text-amount-m: 600 17px/24px var(--font-family);
+
+  /* Тени */
+  --shadow-card: 0 2px 12px rgb(15 18 26 / 6%);
+  --shadow-modal: 0 12px 40px rgb(15 18 26 / 18%);
+
+  /* Фокус с клавиатуры */
+  --focus-ring: 0 0 0 3px rgb(45 106 227 / 35%);
+}

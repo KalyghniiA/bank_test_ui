@@ -1,0 +1,87 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border: none;
+  border-radius: var(--radius-m);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+/* Размеры */
+.l {
+  height: 52px;
+  padding: 0 var(--space-6);
+  font: var(--text-body-semibold);
+}
+
+.m {
+  height: 40px;
+  padding: 0 var(--space-4);
+  font: var(--text-caption-medium);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* Варианты */
+.primary {
+  background: var(--color-accent-primary);
+  color: var(--color-text-on-accent);
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--color-accent-primary-hover);
+}
+
+.primary:disabled {
+  background: var(--color-accent-primary-disabled);
+  color: var(--color-text-tertiary);
+}
+
+.secondary {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-primary);
+}
+
+.secondary:hover:not(:disabled) {
+  background: var(--color-bg-subtle-hover);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-text-link);
+}
+
+.ghost:hover:not(:disabled) {
+  background: var(--color-bg-subtle);
+}
+
+.danger {
+  background: var(--color-status-danger-bg);
+  color: var(--color-status-danger);
+}
+
+.secondary:disabled,
+.ghost:disabled,
+.danger:disabled {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-tertiary);
+}
+
+/* Во время загрузки кнопка неактивна, но не «серая»: пользователь видит, что действие идёт. */
+.loading:disabled {
+  cursor: progress;
+}
+
+.primary.loading:disabled {
+  background: var(--color-accent-primary);
+  color: var(--color-text-on-accent);
+}
