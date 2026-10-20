@@ -1,0 +1,11 @@
+.skeleton {
+  display: block;
+  background: var(--color-bg-subtle-hover);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
