@@ -1,0 +1,68 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font: var(--text-caption-medium);
+  color: var(--color-text-secondary);
+}
+
+.input {
+  height: 52px;
+  padding: 0 var(--space-4);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-m);
+  background: var(--color-bg-subtle);
+  font: var(--text-body);
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.input:hover:not(:disabled) {
+  background: var(--color-bg-subtle-hover);
+}
+
+/* Фокус — синяя рамка вместо общего focus-ring: поле и так крупное. */
+.input:focus-visible {
+  border-color: var(--color-border-focus);
+  background: var(--color-bg-surface);
+  box-shadow: none;
+}
+
+.input:disabled {
+  color: var(--color-text-tertiary);
+  cursor: not-allowed;
+}
+
+.invalid .input {
+  border-color: var(--color-status-danger);
+  background: var(--color-status-danger-bg);
+}
+
+.hint,
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font: var(--text-caption);
+}
+
+.hint {
+  color: var(--color-text-secondary);
+}
+
+.error {
+  color: var(--color-status-danger);
+}
+
+.error svg {
+  flex: none;
+  margin-top: 1px;
+}

@@ -1,0 +1,22 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-primary);
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-m);
+  background: var(--color-accent-primary);
+  color: var(--color-text-on-accent);
+  font: 700 17px/1 var(--font-family);
+}
+
+.name {
+  font: var(--text-h3);
+}
