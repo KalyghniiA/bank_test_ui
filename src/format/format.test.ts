@@ -4,7 +4,7 @@ import { formatDate } from './date'
 import { formatMoney } from './money'
 
 // Intl разделяет разряды и отделяет «₽» неразрывными пробелами — заменяем их на обычные для читаемости.
-const plain = (s: string) => s.replace(/[  ]/g, ' ')
+const plain = (s: string) => s.replace(/[\u00a0\u202f]/g, ' ')
 
 describe('formatMoney', () => {
   it('форматирует рубли с разделителем тысяч и двумя знаками', () => {
